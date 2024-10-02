@@ -1,0 +1,83 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CurrencyExchangeServiceApplication8000",
+            "request": "launch",
+            "mainClass": "com.msc.currency_exchange_service.CurrencyExchangeServiceApplication8000",
+            "projectName": "currency-exchange-service"
+        },
+        {
+            "type": "java",
+            "name": "CurrencyExchangeServiceApplication8082",
+            "request": "launch",
+            "mainClass": "com.msc.currency_exchange_service.CurrencyExchangeServiceApplication8082",
+            "projectName": "currency-exchange-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-LimitsServiceApplication<limits-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.limits_service.LimitsServiceApplication",
+            "projectName": "limits-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57053 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=limits-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringCloudConfigServerApplication<spring-cloud-config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.spring_cloud_config_server.SpringCloudConfigServerApplication",
+            "projectName": "spring-cloud-config-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57033 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=spring-cloud-config-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CurrencyExchangeServiceApplication<currency-exchange-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.currency_exchange_service.CurrencyExchangeServiceApplication",
+            "projectName": "currency-exchange-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49983 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=currency-exchange-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryServerApplication<discovery-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.discovery_server.DiscoveryServerApplication",
+            "projectName": "discovery-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52418 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=discovery-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CurrencyConversionServiceApplication<currency-conversion-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.currency_conversion_service.CurrencyConversionServiceApplication",
+            "projectName": "currency-conversion-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61778 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=currency-conversion-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msc.api_gateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
