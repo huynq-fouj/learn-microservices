@@ -19,7 +19,7 @@ public class CurrencyExchangeController {
     private final Environment environment;
     private final ExchangeValueRepository exchangeValueRepository;
 
-    @GetMapping("currency-exchange/from/{from}/to/{to}")
+    @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public ExchangeValue retrieveExchangeValue(
         @PathVariable String from,
         @PathVariable String to
@@ -28,7 +28,7 @@ public class CurrencyExchangeController {
         return opte.get();
     }
 
-    @GetMapping("currency-exchange/list")
+    @GetMapping("/currency-exchange/list")
     public List<ExchangeValue> retrieveExchangeValue() {
         List<ExchangeValue> evs = exchangeValueRepository
             .findAll()
