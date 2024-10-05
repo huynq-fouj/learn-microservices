@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono;
 
 @Component
 @Slf4j
-public class GatewayLoggingFilter implements GlobalFilter, Ordered  {
+public class GatewayLoggingFilter implements GlobalFilter, Ordered {
 
     @Override
     public int getOrder() {
@@ -30,10 +30,7 @@ public class GatewayLoggingFilter implements GlobalFilter, Ordered  {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         log.info("Request: {} - Request Uri: {}", request, request.getURI().getPath());
-        // String traceId = MDC.get("traceId");
-        // String spanId = MDC.get("spanId");
-        // log.info("Request passed through API Gateway with traceId: {} and spanId: {}", traceId, spanId);
         return chain.filter(exchange);
     }
-    
+
 }
